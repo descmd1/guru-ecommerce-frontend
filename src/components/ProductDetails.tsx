@@ -38,7 +38,7 @@ const ProductDetails: React.FC = () => {
 
   return (
     <>
-      <div className="p-6 w-2/6 flex flex-col border shadow-md align-middle justify-center bg-slate-100 m-auto mt-6">
+      <div className="md:p-6 md:w-2/6 w-screen p-5 flex flex-col border shadow-md align-middle justify-center bg-slate-100 md:m-auto mt-6">
         <img
           src={product.imageUrl}
           alt={product.name}

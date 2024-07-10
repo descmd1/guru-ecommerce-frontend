@@ -44,7 +44,7 @@ const Admin: React.FC = () => {
   };
 
   return (
-    <div className="p-6 flex flex-col justify-center m-auto bg-slate-100 shadow-md w-2/4 mt-8">
+    <div className=" w-screen md: p-6 flex flex-col justify-center m-auto bg-slate-100 shadow-md md:w-2/4 mt-8 ">
       <h1 className="text-2xl font-bold mb-4">Add Product</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
