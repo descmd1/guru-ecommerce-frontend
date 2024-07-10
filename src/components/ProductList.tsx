@@ -42,9 +42,9 @@ const ProductList: React.FC = () => {
   };
 
   return (
-    <div className="p-6 w-2/3 justify-center ml-60 items-center">
+    <div className=" w-screen md:p-6 md:w-2/3 justify-center md:ml-60 p-5 items-center flex-col md:flex">
       <h1 className="text-2xl font-bold mb-4">Products</h1>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="md:grid md:grid-cols-3 gap-4  flex flex-col items-center justify-between">
         {products.map((product) => (
           <div key={product._id} className="border p-4 rounded bg-slate-100">
             <Link to={`/products/${product._id}`}>
@@ -65,7 +65,7 @@ const ProductList: React.FC = () => {
           </div>
         ))}
       </div>
-      <div className="items-center flex gap-8 justify-center w-full">
+      <div className=" flex gap-8 justify-between w-full md:w-3/4 mt-5">
         <Link to="/cart">
           <button className="text-slate-50 shadow-md rounded-md border items-center py-2 px-2 text-md bg-green-700">
             Go to cart
